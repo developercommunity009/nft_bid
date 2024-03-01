@@ -1,0 +1,116 @@
+.From{
+    width: 100%;
+}
+.From_box_input{
+    margin-top: 2rem;
+}
+.From_box_input label{
+    display: block;
+    width: 100%;
+    margin-left: 1rem;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+.From_box_input input {
+    color: var(--icons-color);
+}
+.From_box_input textarea {
+    color: var(--icons-color);
+}
+.From_box_input_userName{
+    width: 100%;
+    border: 1px solid var(--icons-color);
+    padding: 1rem;
+    border-radius: 1rem;
+    border-radius: 1rem;
+    background-color: transparent;
+    outline: none;
+}
+.From_box_input::placeholder{
+    font-size: 1.2rem;
+    color: var(--icons-color);
+}
+.From_box_input_box{
+    width: 100%;
+    border: 1px solid var(--icons-color);
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    overflow: hidden;
+}
+.From_box_input_box_icon{
+    font-size: 2rem;
+    background-color: var(--icons-color);
+    padding: .5rem 1rem;
+    color: var(--main-bg-color) ;
+    display: grid;
+    cursor: pointer;
+}
+.From_box_one{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+}
+.From_box_input_box input{
+    width: 90%;
+    border: 0;
+    background-color: transparent;
+    outline: none;
+}
+.From_box_input textarea{
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+.From_box_input_social{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+}
+.From_box_btn{
+    margin: 4rem 0;
+}
+
+.From_box_input_box_icon span{
+    font-size: 1rem;
+}
+
+.button{
+    width: 100%;
+    display: flex;
+    justify-self:center;
+    font-size: 1.5rem;
+    justify-content: center;
+    background-color: var(--icons-color);
+    padding: 1rem 2rem;
+    border: 1px solid var(--icons-color);
+    font-size: 1.1rem;
+    color: var(--shadow-light-color);
+    cursor: pointer;
+    transition: all .2s ease-in;
+    box-shadow: var(--box-shadow);
+    border-radius: 2.2rem;
+}
+.button:hover{
+background-color: var(--main-bg-color);
+border: 1px solid var(--icons-color);
+color: var(--icons-color);
+}
+
+@media screen and (max-width: 35em) {
+.From_box_input_social{
+    grid-template-columns: 1fr;
+}
+}
+
+
+@media screen and (min-width: 425px) and (max-width: 768px){
+    .From_box_input_social{
+        grid-template-columns: 1fr 1fr;
+    }  
+}

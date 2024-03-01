@@ -1,0 +1,214 @@
+.BigNftSlider_box{
+    margin: 0 auto;
+    width: 80%;
+    padding-block: 8rem;
+    display: grid;
+    grid-template-columns: repeat(12 ,1fr);
+    align-items: center;
+}
+
+.BigNftSlider_box_left {
+    grid-column:1 /7;
+    grid-row:1 /-1;
+    background-color: var(--main-bg-color);
+    color: var(--box-shadow-2);
+    border-radius: 1rem;
+    padding: 2rem;
+    z-index: 11111;
+    height: 90vh;
+}
+
+.BigNftSlider_box_left h2 {
+    font-size: 3rem;
+    line-height: 0;
+}
+
+.BigNftSlider_box_right{
+    grid-column: 6/-1;
+    grid-row: 1/-1;
+    padding: 1rem;
+    background-color: var( --shadow-light-color);
+    border-radius: 2.5rem;
+    box-shadow: var(--shadow-light-color);
+}
+
+
+/* CREATER SECTION */
+
+.BigNftSlider_box_left_creator {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.BigNftSlider_box_left_creator_profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.BigNftSlider_box_left_creator_profile_img {
+    border-radius: 50%;
+}
+
+.BigNftSlider_box_left_creator_profile_info {
+    line-height: 0;
+}
+
+.BigNftSlider_box_left_creator_profile_info p {
+    margin-bottom: -.7rem;
+    margin-top: 1rem;
+}
+
+.BigNftSlider_box_left_creator_collection {
+    display: flex;
+    align-items: 1rem;
+    gap: 1rem;
+}
+
+.BigNftSlider_box_left_creator_collection_icon {
+    font-size: 4rem;
+}
+
+.BigNftSlider_box_left_creator_collection_info {
+    line-height: 0;
+}
+
+.BigNftSlider_box_left_bidding_box {
+    border: 1px solid var(--shadow-dark-color);
+    margin: 2rem;
+    padding: 0 4rem;
+    border-radius: .5rem;
+}
+
+.BigNftSlider_box_left_bidding_box_auction {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.BigNftSlider_box_left_bidding_box small {
+    background-color: var(--shadow-dark-color);
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    font-weight: 600;
+}
+
+.BigNftSlider_box_left_bidding_box_icon {
+    font-size: 2rem;
+}
+
+.BigNftSlider_box_left_bidding_box_timer {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    text-align: center;
+    padding: 1rem 0rem 3rem 0rem;
+    border-bottom: 1px solid var(--shadow-dark-color);
+}
+
+.BigNftSlider_box_left_bidding_box_timer_item {
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 0;
+}
+
+.BigNftSlider_box_left_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+    gap: 4rem;
+    padding-block: 2rem 0rem;
+}
+
+.BigNftSlider_box_left_sliderBtn {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 2rem;
+    margin-top: 3rem;
+}
+
+.BigNftSlider_box_left_sliderBtn_icon {
+    cursor: pointer;
+    transition: all .3s ease-in;
+}
+
+.BigNftSlider_box_left_sliderBtn_icon:hover {
+    background-color: var(--shadow-dark-color);
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+
+/* //------RIGHT SECTIONS */
+
+.BigNftSlider_box_right_box {
+    position: relative;
+}
+
+.BigNftSlider_box_right_box_img {
+    border-radius: 2rem;
+}
+
+.BigNftSlider_box_right_box_like {
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.2rem;
+    background-color: var(--icons-color);
+    color: var(--shadow-dark-color);
+    padding: .5rem 1rem;
+    border-radius: 5rem;
+}
+
+
+
+
+@media screen and (max-width : 65em) {
+    .BigNftSlider_box {
+        width: 90%;
+        padding-top: 28rem;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+
+    .BigNftSlider_box_left {
+        height: 120vh;
+        padding: 1.5rem;
+    }
+
+    .BigNftSlider_box_right{
+        margin-top: -70rem;
+    }
+
+    .BigNftSlider_box_left_creator {
+        gap: 1rem;
+        grid-template-columns: 1.8fr 1fr;
+    }
+
+    .BigNftSlider_box_left_creator_profile_info {
+        font-size: .8rem;
+        line-height: 1;
+    }
+
+    .BigNftSlider_box_left_creator_collection_icon {
+        font-size: 1.5rem;
+    }
+
+    .BigNftSlider_box_left_creator_collection_info {
+        font-size: .8rem;
+    }
+
+    .BigNftSlider_box_left_bidding_box_timer {
+        gap: 2rem;
+    }
+
+    .BigNftSlider_box_left_bidding_box_timer p {
+        font-size: 1rem;
+    }
+}
