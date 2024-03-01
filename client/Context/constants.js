@@ -5,7 +5,7 @@ import nftMarketplace from "./NFTMarkitplace.json";
 // export const NFTMarkitplaceAddress = "0x47476B9BcD9c04bd1F714dbe927eFB519102a46C";
 
 // Bidding
-export const NFTMarkitplaceAddress = "0x39cB3B9144e90f991173F8CE28EB5B5FAdd6848d";
+export const NFTMarkitplaceAddress = "0x67Acf2a1FF7e78dD7d7278969b75782e83A2C0f2";
 
 export const NFTMarkitplaceABI = nftMarketplace.abi;
 
