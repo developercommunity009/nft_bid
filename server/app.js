@@ -22,10 +22,9 @@ const transactionRouter = require("./routes/transcationRoute");
 
 
 dotenv.config({path : "./config.env"});
-
 const app = express();
-app.use(express.json({limit : "10kb"}));
 
+app.use(express.json({limit : "10kb"}));
 
 // Data sanitization against NoSQL query Injection
 app.use(mongoSanitize());
@@ -42,14 +41,7 @@ app.use(hpp({
 // Data sanitization against site Scripts XSS
 app.use(xss());
 
-// const app = express();
-// app.use(express.json());
-// app.use(helmet());
-// app.use(helmet.crossOriginResourcePolicy({ policy: "cross-origin" }));
-// app.use(morgan("common"));
-// app.use(bodyParser.json({ limit: "30mb", extended: true }));
-// app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
-// app.use(cors());
+
 
 
 // Secure Header HTTP
@@ -57,7 +49,15 @@ app.use(helmet());
 
 app.use(cors());
 
-// Rate Limit set
+
+//  Globle MiddelWare
+if(process.env.NODE_ENV == "developement"){
+    app.use(morgan("dev"))
+}
+app.get("/" , (req, res) => {
+    res.json("NFT Biddind")
+})
+
 const ratelimit = rateLimit({
     // if user trafic are high on webste then can incress the value of max
     max :1000,
@@ -67,12 +67,6 @@ const ratelimit = rateLimit({
 
 // here we are apply Limit on every Single Route
 app.use("/api" , ratelimit);
-
-//  Globle MiddelWare
-if(process.env.NODE_ENV == "developement"){
-    app.use(morgan("dev"))
-}
-
 
 // SERVING TEMPLATE DATA
 app.use('/static', express.static(path.join(__dirname, 'public/assets')))
