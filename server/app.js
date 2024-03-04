@@ -55,7 +55,7 @@ if(process.env.NODE_ENV == "developement"){
     app.use(morgan("dev"))
 }
 app.get("/" , (req, res) => {
-    res.json("NFT Biddind Bidding")
+    res.json("NFT Biddind Bidding Server")
 })
 
 const ratelimit = rateLimit({
