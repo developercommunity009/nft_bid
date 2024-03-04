@@ -48,7 +48,8 @@ app.use(xss());
 app.use(helmet());
 
 app.use(cors({
-  origin: 'https://nft-bid-front-end.vercel.app', 
+  origin: 'https://nft-bid-front-end.vercel.app',
+methods: ['GET', 'POST', 'PUT', 'DELETE' , 'PATCH'],
   credentials: true,
 }));
 
