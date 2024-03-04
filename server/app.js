@@ -47,7 +47,10 @@ app.use(xss());
 // Secure Header HTTP
 app.use(helmet());
 
-app.use(cors());
+app.use(cors({
+  origin: 'https://nft-bid-front-end.vercel.app', 
+  credentials: true,
+}));
 
 
 //  Globle MiddelWare
