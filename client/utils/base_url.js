@@ -1,2 +1,2 @@
-export const base_url="http://127.0.0.1:3001";
+export const base_url="https://nft-bid-front-end.vercel.app";
 // export const base_url="window.location.origin";
