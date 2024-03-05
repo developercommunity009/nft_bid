@@ -27,6 +27,7 @@ const auther = () => {
     const { nftOwnDb } = useSelector((state) => state.nft)
     const { ownDeListed } = useSelector((state) => state.nft)
     // const { nftfromDb } = useSelector((state) => state.nft)
+    console.log(ownDeListed);
 
     const [nfts, setNfts] = useState([]);
     const [mynfts, setMynfts] = useState([]);
@@ -45,7 +46,6 @@ const auther = () => {
     const [nftsDelisted, setNftsDelisted] = useState([]);
     const [creators, setCreators] = useState(null);
 
-    console.log(nftsDelisted);
 
     useEffect(() => {
         dispatch(getTotalNfts());
