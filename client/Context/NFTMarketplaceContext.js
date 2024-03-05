@@ -163,7 +163,7 @@ export const NFTMarkitplaceProvider = (({ children }) => {
 
     // --------- CREATE NFT
     const createNFT = async (name, price, image, description) => {
-
+          console.log(name, price, image, description)
         if (!name || !description || !price || !image) return (setError("Data is Missing!"), setOpenError(true))
         const data = JSON.stringify({ name, description, image });
         try {
@@ -181,9 +181,12 @@ export const NFTMarkitplaceProvider = (({ children }) => {
 
       //  ----------- CREATESALE FUNCTION
       const createSale = async (url, formInputPrice, isReselling, id) => {
+          console.log(url, formInputPrice, isReselling, id)
         try {
             const price = ethers.utils.parseUnits(formInputPrice, "ether");
+            
             const contract = await connectingWithSmartContract();
+            console.log(contract);
             const listingPrice = await contract.getListingPrice();
 
             const transcation = !isReselling ? await contract.createToken(url, price, {
