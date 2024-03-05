@@ -73,7 +73,7 @@ const ratelimit = rateLimit({
 app.use("/api" , ratelimit);
 
 // SERVING TEMPLATE DATA
-app.use('/static', express.static(path.join(__dirname, 'public/assets')))
+app.use('/static', express.static(path.join(__dirname, '/public/assets')))
 
 // COUSTOM MIDDLEWARE
 app.use((req, res, next) => {
