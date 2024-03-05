@@ -184,9 +184,8 @@ export const NFTMarkitplaceProvider = (({ children }) => {
           console.log(url, formInputPrice, isReselling, id)
         try {
             const price = ethers.utils.parseUnits(formInputPrice, "ether");
-            
+            console.log(price);
             const contract = await connectingWithSmartContract();
-            console.log(contract);
             const listingPrice = await contract.getListingPrice();
 
             const transcation = !isReselling ? await contract.createToken(url, price, {
