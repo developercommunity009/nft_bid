@@ -171,7 +171,7 @@ export const NFTMarkitplaceProvider = (({ children }) => {
             setTokenURL(url);
             await createSale(url, price);
             // router.push("/searchPage");
-            // console.log("url  =>", url)
+            console.log("url  =>", url)
         } catch (error) {
             setError("Error while Creating NFTs");
             setOpenError(true)
