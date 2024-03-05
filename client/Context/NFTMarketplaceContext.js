@@ -152,6 +152,7 @@ export const NFTMarkitplaceProvider = (({ children }) => {
         try {
             const added = await client.add({ content: file });
             const url = `${subdomain}/ipfs/${added.path}`;
+            console.log(url)
             return url;
         } catch (error) {
             setError("Error in Upload  to IPFS ");
