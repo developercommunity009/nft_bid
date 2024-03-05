@@ -26,7 +26,7 @@ const AutherNFTCardBox = ({
 }) => {
 
     const {logedInUser} = useSelector((state)=> state.auth)
-    // console.log(ownNftscDb,nftsDelisted)
+    console.log(ownNftscDb,nftsDelisted)
     return (
         <div className={Style.AutherNFTCardBox}>
             {collectables && (<NFTCardtwo NFTData = {nfts}  />)}
