@@ -38,7 +38,7 @@ const Profile = (props) => {
     return (
         <div className={Style.profile}>
             {logedInUser !== undefined  || session !== undefined  ? <div className={Style.profile_account}>
-                <Image src={userImg ? `http://127.0.0.1:3001/static/${userImg}` : images.profile} alt='Profile Imges' width={50} height={50} className={Style.profile_account_img} />
+                <Image src={userImg ? `https://nft-bid.vercel.app/static/${userImg}` : images.profile} alt='Profile Imges' width={50} height={50} className={Style.profile_account_img} />
                 <div className={Style.profile_account_info}>
                     <p>{logedInUser ? logedInUser?.name : session ? session?.user?.name : ""}</p>
                     <small>{currentAccount.slice(0, 14)}...</small>
