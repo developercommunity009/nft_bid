@@ -45,6 +45,8 @@ const auther = () => {
     const [nftsDelisted, setNftsDelisted] = useState([]);
     const [creators, setCreators] = useState(null);
 
+    console.log(ownNftscDb);
+
     useEffect(() => {
         dispatch(getTotalNfts());
         dispatch(ownNftDetaBase(token));
