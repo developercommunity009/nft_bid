@@ -51,7 +51,7 @@ const auther = () => {
         dispatch(getTotalNfts());
         dispatch(ownNftDetaBase(token));
         dispatch(ownDelisted(token));
-
+        console.lo("LISTED")
 
     }, [])
 
