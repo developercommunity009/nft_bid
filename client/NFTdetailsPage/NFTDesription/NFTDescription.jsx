@@ -240,7 +240,7 @@ console.log(nft)
                     <h1>{singalNFTs?.metadata?.name} TokenID#{tokenId}</h1>
                     <div className={Style.NFTDescription_box_profile_box}>
                         <div className={Style.NFTDescription_box_profile_box_right}>
-                            <Image src={`http://127.0.0.1:3001/static/${singalNFTs?.creator?.image}`}
+                            <Image src={`https://nft-bid.vercel.app/static/${singalNFTs?.creator?.image}`}
                                 alt='Profile'
                                 width={40}
                                 height={40}
@@ -257,7 +257,7 @@ console.log(nft)
                     </div>
                     {singalNFTs?.seller && <div className={Style.NFTDescription_box_profile_box}>
                         <div className={Style.NFTDescription_box_profile_box_right}>
-                            <Image src={`http://127.0.0.1:3001/static/${singalNFTs?.seller?.image}`}
+                            <Image src={`https://nft-bid.vercel.app/static/${singalNFTs?.seller?.image}`}
                                 alt='Profile'
                                 width={40}
                                 height={40}
