@@ -12,7 +12,7 @@ const nextConfig = {
     //   'lh5.googleusercontent.com',
     //   'lh6.googleusercontent.com',
     // ],
-    domains:["127.0.0.1","codevvertix-nftmarketplace.infura-ipfs.io","lh3.googleusercontent.com"],
+    domains:["https://nft-bid.vercel.app","codevvertix-nftmarketplace.infura-ipfs.io","lh3.googleusercontent.com"],
     // domains:["codevvertix-nftmarketplace.infura-ipfs.io"],
     formats:["image/webp"],
   }, 
