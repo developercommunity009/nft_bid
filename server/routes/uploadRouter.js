@@ -20,8 +20,7 @@ const storage= multer.diskStorage({
 const upload=multer({storage:storage});
 
 router.post('/',upload.single("image"), (req,res)=>{
-
-    // console.log(req.file);
+    console.log(req.file);
     try{
         res.send({ status: "success", message: `${req.file.originalname} uploaded!` })
     } catch(err){
