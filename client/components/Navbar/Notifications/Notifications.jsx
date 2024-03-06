@@ -24,7 +24,7 @@ const Notifications = (props) => {
             <p>Notification</p>
             <div className={Style.notification_box}>
                 <div className={Style.notification_box_img}>
-                    <Image src={ image ? `http://127.0.0.1:3001/static/${image}` : images.profile} alt='Notifications Imges' width={50} height={50} className={Style.notification_box_img} />
+                    <Image src={ image ? `https://nft-bid.vercel.app/static/${image}` : images.profile} alt='Notifications Imges' width={50} height={50} className={Style.notification_box_img} />
                 </div>
                 <div className={Style.notification_box_info}>
                     <h4>{username ? username : session ? session?.user?.name : "Nobody LogedIn"}</h4>
