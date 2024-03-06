@@ -26,13 +26,14 @@ const AutherNFTCardBox = ({
 }) => {
 
     const {logedInUser} = useSelector((state)=> state.auth)
-    console.log(ownNftscDb,nftsDelisted)
+       const { ownDeListed } = useSelector((state) => state.nft)
+    console.log(ownDeListed)
     return (
         <div className={Style.AutherNFTCardBox}>
             {collectables && (<NFTCardtwo NFTData = {nfts}  />)}
             {created && (<NFTCardtwo NFTData = {mynfts}/>)}
             {collectablesDb && (<NFTCardtwoB NFTData = {ownNftscDb}  />)}
-            {createdDb && (<NFTCardtwoB NFTData = {nftsDelisted}/>)}
+            {createdDb && (<NFTCardtwoB NFTData = {ownDeListed}/>)}
             {like && (<NFTCardtwoB NFTData = {logedInUser?.whislist} />)}
             {follower && (
                 <div className={Style.AutherNFTCardBox_box}>
