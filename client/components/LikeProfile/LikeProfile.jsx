@@ -12,7 +12,7 @@ console.log(NFTData);
     {
       NFTData?.map((el , i)=>(
          <div className={Style.like_box} key={i+1}>
-         <Image src={`http://127.0.0.1:3001/static/${el.image}`} alt='Profile Img'
+         <Image src={`https://nft-bid.vercel.app/static/${el.image}`} alt='Profile Img'
           width={20} height={20} className={Style.like_box_img} />
          </div>
         ))
