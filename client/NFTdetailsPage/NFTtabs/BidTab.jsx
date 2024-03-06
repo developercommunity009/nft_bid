@@ -26,7 +26,7 @@ const BidTab = ({ BidData, icon }) => {
             {
                 BidData.map((el, i) => (
                     <div className={Style.NFTtabs_box} key={i + 1}>
-                        <Image src={`http://127.0.0.1:3001/static/${el?.bidder.image}`} alt='Profile image' width={40} height={40} className={Style.NFTtabs_box_img} />
+                        <Image src={`https://nft-bid.vercel.app/static/${el?.bidder.image}`} alt='Profile image' width={40} height={40} className={Style.NFTtabs_box_img} />
                         <div className={Style.NFTtabs_box_info}>
                             <span>{el?.bidder.name}{" "}{icon}</span>
                             <h5>Amount : {el?.amount}</h5>
