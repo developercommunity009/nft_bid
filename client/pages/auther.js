@@ -70,7 +70,8 @@ const auther = () => {
     }, [nftsc])
 
 // console.log(nftOwnDb)
-// console.log(ownDeListed)
+console.log(ownDeListed)
+    console.log(nftsDelisted)
 
 
     useEffect(() => {
