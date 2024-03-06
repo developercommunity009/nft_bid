@@ -40,6 +40,7 @@ const NaveBar = () => {
     const [userImg, setUserImg] = useState();
     // const [googleUser , setGoogleUser] = useState(false);
     const { logedInUser } = useSelector((state) => state.auth);
+    console.log(logedInUser);
    console.log(userImg);
     useEffect(() => {
         dispatch(getSinglUser({ token, id: userId }))
