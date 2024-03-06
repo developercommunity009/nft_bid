@@ -48,7 +48,7 @@ const FollwerTabCard = ({ el, i }) => {
                     />
                 </div>
                 <div className={Style.FollwerTabCard_box_profile}>
-                  <Image src={`http://127.0.0.1:3001/static/${el?.image[0]?.creator?.image}` || images.user1} className={Style.FollwerTabCard_box_profile_img}
+                  <Image src={`https://nft-bid.vercel.app/static/${el?.image[0]?.creator?.image}` || images.user1} className={Style.FollwerTabCard_box_profile_img}
                         alt='Profile Image'
                         width={50}
                         height={50}
