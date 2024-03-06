@@ -47,10 +47,12 @@ const auther = () => {
 
     useEffect(() => {
         dispatch(getTotalNfts());
+    }, [])
+
+    useEffect(()=>{
         dispatch(ownNftDetaBase(token));
         dispatch(ownDelisted(token));
-
-    }, [])
+    },[token])
 
     useEffect(() => {
         setNftsc(totalNFTs);
