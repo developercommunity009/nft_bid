@@ -27,7 +27,7 @@ const updateInfo = async (userData) => {
 
 const uploadImg = async (userImg) => {
     console.log(userImg);
-    const response = await axios.post(`${base_url}/api/v1/upload`, userImg);
+    const response = await axios.post(`${base_url}/api/v1/upload/`, userImg);
     if (response.data) {
         return response.data;
     }
