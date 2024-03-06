@@ -55,7 +55,7 @@ const account = () => {
                         className={Style.account_box_img_img}
                     /> :
                         <Image
-                            src={logedInUser?.image ? `http://127.0.0.1:3001/static/${logedInUser.image}`: images.profile} 
+                            src={logedInUser?.image ? `https://nft-bid.vercel.app/static/${logedInUser.image}`: images.profile} 
                             alt='acount upload'
                             width={100}
                             height={100}
